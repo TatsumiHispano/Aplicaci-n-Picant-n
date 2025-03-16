@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>imagenes/login-regi-imagen.png</file>
+        <file>imagenes/logo.ico</file>
+        <file>imagenes/logo.png</file>
+        <file>imagenes/default_avatar.png</file>
+        <file>imagenes/sitio_construccion.png</file>
+        <file>imagenes/tfglognoletter.png</file>
+        <file>imagenes/tfglogo.png</file>
+        <file>imagenes/logotfg.png</file>
+    </qresource>
+</RCC>
