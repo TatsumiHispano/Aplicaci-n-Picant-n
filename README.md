@@ -6,6 +6,8 @@ Desarrollado por:
  
  Adrian Aznar Madrid
 
+ Picantón - Aplicación para la Gestión de Restaurantes
+
  ![Captura de pantalla 2025-03-16 125316](https://github.com/user-attachments/assets/de9315f9-7431-4cd9-b792-020204d6ee17)
  
 ![Captura de pantalla 2025-03-16 125337](https://github.com/user-attachments/assets/ee23427a-b1b0-465b-bf3a-8d2d3f56b773)
@@ -30,7 +32,7 @@ Desarrollado por:
 
 ![Captura de pantalla 2025-03-16 125705](https://github.com/user-attachments/assets/4564f513-f2f9-41b1-9c3e-e571fb96c8eb)
 
-Picantón - Aplicación para la Gestión de Restaurantes
+
 
 Descripción General
 
