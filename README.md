@@ -35,9 +35,11 @@ Desarrollado por:
 
 
 🐔 Picantón
+
 Picantón es una aplicación desarrollada en Python que funciona como un buscador y comparador de restaurantes, similar a plataformas como Just Eat. Está diseñada tanto para usuarios que buscan opciones gastronómicas como para propietarios de restaurantes que desean promocionar sus negocios.
 
 🎯 Objetivos
+
 Para usuarios:
 Obtener información general sobre restaurantes de forma rápida y sencilla.
 
@@ -67,6 +69,7 @@ Organizar y gestionar mejor sus servicios.
 Incrementar ventas y mejorar la competitividad local.
 
 🧩 Estructura del Proyecto
+
 La aplicación está organizada en módulos y clases desarrolladas en Python con PySide6 y PyQt6. A continuación se detallan los principales componentes:
 
 Módulos de Interfaz de Usuario (UI):
@@ -125,6 +128,7 @@ SQLite – Base de datos local para gestión de usuarios, restaurantes y product
 Visual Studio Code – Entorno de desarrollo
 
 🚀 Funcionalidades Clave
+
 Registro e inicio de sesión con autenticación segura.
 
 Gestión de perfiles de usuario y preferencias.
