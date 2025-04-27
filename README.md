@@ -34,177 +34,115 @@ Desarrollado por:
 
 
 
-Descripción General
+🐔 Picantón
+Picantón es una aplicación desarrollada en Python que funciona como un buscador y comparador de restaurantes, similar a plataformas como Just Eat. Está diseñada tanto para usuarios que buscan opciones gastronómicas como para propietarios de restaurantes que desean promocionar sus negocios.
 
-Picantón es una aplicación desarrollada en Python, similar a Just Eat, diseñada para facilitar la búsqueda y comparación de restaurantes. 
+🎯 Objetivos
+Para usuarios:
+Obtener información general sobre restaurantes de forma rápida y sencilla.
 
-La aplicación está dirigida tanto a usuarios que buscan opciones gastronómicas como a propietarios de restaurantes que desean promocionar sus negocios.
+Crear perfiles para guardar preferencias y opiniones personales.
 
-Objetivos
+Buscar restaurantes cercanos mediante un mapa interactivo.
 
-Los principales objetivos de Picantón son:
+Aplicar filtros por tipo de gastronomía.
 
-Para los usuarios:
+Leer y dejar reseñas y comentarios.
 
-Proporcionar información general de los restaurantes de forma rápida y sencilla.
+Disfrutar de una interfaz personalizable para mejorar la experiencia.
 
-Facilitar la creación de perfiles de usuario para guardar preferencias y opiniones.
+Usar una herramienta práctica, atractiva y útil para decidir dónde comer.
 
-Mostrar restaurantes cercanos a la ubicación del usuario a través de un mapa.
+Para restaurantes:
+Compartir información detallada del negocio.
 
-Permitir la búsqueda de restaurantes mediante filtros por tipo de gastronomía.
+Publicar y actualizar menús y servicios.
 
-Ofrecer una plataforma para que los usuarios expresen sus opiniones y comentarios sobre los restaurantes.
+Aumentar su visibilidad y captar nuevos clientes.
 
-Mejorar la experiencia del usuario proporcionando una herramienta sencilla y útil para elegir restaurantes.
+Recibir retroalimentación directa a través de reseñas.
 
-Permitir la personalización de la interfaz de usuario según las preferencias del usuario.
+Organizar y gestionar mejor sus servicios.
 
-Para los restaurantes:
+Incrementar ventas y mejorar la competitividad local.
 
-Ayudar a los restaurantes a compartir información detallada de su establecimiento.
+🧩 Estructura del Proyecto
+La aplicación está organizada en módulos y clases desarrolladas en Python con PySide6 y PyQt6. A continuación se detallan los principales componentes:
 
-Permitir la publicación y actualización de menús y servicios.
+Módulos de Interfaz de Usuario (UI):
+form_info_design.py
+Muestra información sobre la aplicación y los autores.
 
-Facilitar la captación de nuevos clientes.
+form_ajustes.py
+Permite personalizar la interfaz (colores y estilo).
 
-Mejorar la competitividad en el sector de la hostelería local.
+form_adminmenu.py
+Panel principal de administración con navegación entre formularios.
 
-Mejorar la organización y control de sus servicios.
+ui_Register.py
+Registro de usuarios con validación de datos y almacenamiento en SQLite.
 
-Obtener retroalimentación directa de los clientes a través de reseñas y comentarios.
+ui_Login.py
+Inicio de sesión con navegación al registro o a la app principal.
 
-Facilitar el crecimiento económico mediante el incremento de ventas y la obtención de nuevos clientes.
+form_usuario.py
+Gestión de información personal del usuario.
 
-Estructura del Proyecto
+form_admin_user.py
+Administración de usuarios: búsqueda, edición y eliminación.
 
-La aplicación Picantón se compone de varios módulos y clases en Python, cada uno con una función específica. A continuación, se describen los principales componentes:
+form_admin_empresa.py
+Administración de empresas registradas.
 
-Módulos de la Interfaz de Usuario (UI)
+ui_Loadingbar.py
+Pantalla de carga animada con barra de progreso.
 
-form_info_design.py:
-Crea una ventana principal con el título "Info Picantón" y un icono.
+form_menu_empresa.py
+Panel de administración para empresas, con acceso a gestión de productos y usuarios.
 
-Muestra la versión de la aplicación y los nombres de los autores mediante etiquetas (QLabel).
+form_maestro_design.py
+Construcción de interfaz de escritorio avanzada con PySide6.
 
-form_ajustes.py:
-Crea una ventana de ajustes que permite al usuario cambiar los colores de la barra superior, el menú lateral y el cuerpo principal de la interfaz de usuario.
-Utiliza un diálogo de selección de color para permitir la personalización.
+form_inicio.py
+Vista principal de búsqueda y exploración de restaurantes.
 
-form_adminmenu.py:
-Crea una ventana principal que permite navegar entre diferentes formularios de administración.
+form_inicio_productos.py
+Detalles del restaurante, productos y reseñas.
 
-Utiliza un QStackedWidget para gestionar la navegación entre formularios.
+form_empresa.py
+Edición y gestión de información empresarial.
 
-Incluye botones estilizados para abrir los formularios de administración de usuarios y empresas.
+form_productos.py
+Gestión de productos asociados a los restaurantes.
 
-ui_Register.py:
-Define una ventana de registro de usuarios con validación de entradas y un estilo personalizado.
+🛠️ Tecnologías Utilizadas
+Python – Lenguaje principal del proyecto
 
-Permite a los usuarios registrar su nombre de usuario, correo electrónico y contraseña.
+PySide6 / PyQt6 – Desarrollo de interfaces gráficas
 
-Maneja la interacción con una base de datos SQLite para almacenar los datos de los usuarios.
+SQLite – Base de datos local para gestión de usuarios, restaurantes y productos
 
-Utiliza técnicas de interfaz gráfica avanzadas, como ventanas sin bordes y ventanas movibles.
+Visual Studio Code – Entorno de desarrollo
 
-ui_Login.py:
-Implementa una ventana de inicio de sesión.
+🚀 Funcionalidades Clave
+Registro e inicio de sesión con autenticación segura.
 
-Interactúa con una base de datos SQLite para autenticar usuarios.
+Gestión de perfiles de usuario y preferencias.
 
-Incluye navegación a la ventana de registro y a la aplicación principal.
+Búsqueda por cercanía, tipo de comida y nombre.
 
-form_usuario.py:
-Crea una interfaz gráfica para que los usuarios ingresen y actualicen su información personal.
+Visualización detallada de cada restaurante, incluyendo ubicación en el mapa, menú y opiniones.
 
-Utiliza una base de datos SQLite para almacenar y recuperar los datos de los usuarios.
+Sistema completo de reseñas y comentarios.
 
-form_admin_user.py:
-Proporciona una aplicación para la gestión de usuarios en una base de datos SQLite.
+Panel de administración para empresas.
 
-Incluye funcionalidades de búsqueda, edición y eliminación de usuarios.
+Personalización de la interfaz por parte del usuario.
 
-Maneja errores y considera aspectos de seguridad.
+Carga dinámica de contenido y experiencia fluida.
 
-form_admin_empresa.py:
-Proporciona una aplicación para la gestión de empresas en una base de datos SQLite.
-
-Incluye funcionalidades de búsqueda, edición y eliminación de empresas.
-
-Maneja errores y considera aspectos de seguridad.
-
-ui_Loadingbar.py:
-Crea una pantalla de carga animada con una barra de progreso circular y un logotipo.
-
-Se muestra mientras se cargan los recursos de la aplicación.
-
-Muestra la ventana de inicio de sesión una vez completada la carga.
-
-form_menu_empresa.py:
-Crea una ventana principal con un menú para administrar datos relacionados con la empresa.
-
-Permite navegar entre diferentes formularios para administrar usuarios, productos y otras entidades de la empresa.
-
-Utiliza estilos CSS personalizados para mejorar la apariencia de la interfaz de usuario.
-
-form_maestro_design.py:
-Crea una aplicación de escritorio utilizando el framework PySide6.
-
-Se centra en la creación de una interfaz de usuario (UI) dinámica y atractiva.
-
-form_inicio.py:
-Proporciona los fundamentos para una aplicación de búsqueda y listado de restaurantes.
-
-Utiliza una interfaz gráfica PyQt6.
-
-Maneja interacciones de usuario, operaciones de base de datos y carga asincrónica de imágenes.
-
-form_inicio_productos.py:
-Muestra detalles de un restaurante, incluyendo productos disponibles y reseñas de usuarios.
-
-Ofrece una interfaz de usuario bien diseñada y funcionalidad interactiva.
-
-form_empresa.py:
-Crea una interfaz gráfica de usuario para que los usuarios ingresen o editen información sobre una empresa.
-
-Guarda los cambios realizados en una base de datos SQLite.
-
-form_productos.py:
-Crea una interfaz gráfica de usuario que permite a los usuarios buscar y editar información sobre productos.
-
-Guarda los cambios realizados en la base de datos SQLite.
-
-Tecnologías Utilizadas
-
-Python: Lenguaje de programación principal utilizado para el desarrollo de la aplicación.
-
-PySide6: Biblioteca de Python para el desarrollo de aplicaciones gráficas basadas en el conjunto de herramientas Qt.
-
-SQLite: Sistema de gestión de bases de datos utilizado para el almacenamiento y gestión de datos.
-
-Visual Studio Code: Entorno de desarrollo integrado (IDE) utilizado para el desarrollo de la aplicación.
-
-Funcionalidades Principales
-
-La aplicación Picantón ofrece las siguientes funcionalidades principales:
-
-Registro e inicio de sesión de usuarios: Los usuarios pueden crear cuentas y acceder a la aplicación de forma segura.
-
-Gestión de perfiles de usuario: Los usuarios pueden gestionar su información personal y preferencias.
-
-Búsqueda y visualización de restaurantes: Los usuarios pueden buscar restaurantes cercanos, ver información detallada, menús y reseñas.
-
-Gestión de empresas: Los propietarios de restaurantes pueden registrar y gestionar la información de sus negocios, menús y servicios.
-
-Sistema de reseñas: Los usuarios pueden escribir y leer reseñas de restaurantes para compartir sus opiniones y experiencias.
-
-Personalización de la interfaz de usuario: Los usuarios pueden cambiar los colores y el estilo de la aplicación según sus preferencias.
-
-Visualización de mapas: Los usuarios pueden ver la ubicación de los restaurantes en un mapa.
-
-Conclusión
-
-Picantón es una aplicación completa y funcional que cumple con los objetivos propuestos. Proporciona una solución eficaz para la búsqueda y comparación de restaurantes, tanto para usuarios como para propietarios de negocios. El uso de Python y las bibliotecas y herramientas adecuadas ha permitido desarrollar una aplicación robusta, eficiente y fácil de usar.
+✅ Conclusión
+Picantón es una solución digital funcional e intuitiva para conectar a los amantes de la gastronomía con los restaurantes de su zona. Con un enfoque centrado en la experiencia del usuario y una arquitectura robusta, ofrece una herramienta potente tanto para el consumidor final como para los negocios del sector.
 
 
 
